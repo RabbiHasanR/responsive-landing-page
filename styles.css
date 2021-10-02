@@ -1,0 +1,101 @@
+/* Override default style and set padding and margin to nothing */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* White text throughout */
+body {
+  font-family: "lato", sans-serif;
+  color: white;
+}
+
+/* Make all link text black with no text decoration */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: black;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 30px;
+}
+
+/* All images must not be larger than parent container */
+img {
+  width: 100%;
+}
+
+/* No styling on list items */
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Centers it, sets a maximum width and makes sure elements can flow past it*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+/* Sets background color, height and padding*/
+
+.navbar {
+  background-color: purple;
+  height: 70px;
+  padding: 0 30px;
+}
+
+/* Sets font size, reduces font-weight, adds margin and line height */
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.navbar .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+}
+
+.navbar a:hover{
+    color: #9867C5;
+    border-bottom: 3px solid #9867C5;
+}
