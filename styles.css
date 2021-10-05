@@ -275,3 +275,25 @@ p {
   -webkit-border-radius:50%;
   width:90px;
 }
+
+
+/* Footer css */
+/* Add padding around the footer as well */
+
+footer{
+  background-color: purple;
+  padding: 10px 20px;
+}
+
+
+/* Sets all link texts to white and puts margin to the left and right */
+
+footer a{
+  color: white;
+  margin: 0 10px;
+}
+
+footer a:hover{
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;
+}
