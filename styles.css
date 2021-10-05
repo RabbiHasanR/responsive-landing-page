@@ -297,3 +297,77 @@ footer a:hover{
   color: #9867C5;
   border-bottom: 2px solid #9867C5;
 }
+
+/* Tablets and Under */
+
+@media(max-width: 768px) {
+  .grid,
+  .grid-3{
+    grid-template-columns: 1fr;
+  }
+
+  /* Align all text to the center. This will move all text, including form centrally */
+  .showcase{
+    height: auto;
+    text-align: center;
+  }
+
+  /* This resets the width of the image container and adds margin space to the left */ 
+
+  .image{
+    width: 600px;
+    margin-left: 80px;
+  }
+
+  /* Changes the service sections from side-by-side orientation to each taking its own line. Aligns text to the center */
+  .stats .flex{
+    flex-direction: column;
+  }
+
+  .stats{
+    text-align: center;
+  }
+
+  /* Makes sure each stat section does not exceed the width of parent */
+  .stat{
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  /* (re)Moves the cirle to the center of the card */
+  .circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 270px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+}
+
+/* Mobile devices */
+
+@media (max-width: 500px){
+  .navbar{
+    height:100px;
+  }
+
+  /* Changes the alignment. The logo title stays at the top, the nav links will be below it */
+  .navbar .flex{
+    flex-direction: column;
+  }
+
+
+/* When hovered on, retain white color and change border to black */
+
+.navbar a:hover {
+  color: white;
+  border-bottom: 2px solid black;
+}
+  
+}
