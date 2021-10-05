@@ -222,3 +222,56 @@ p {
 .stats .fa{
   color: purple;
 }
+
+
+/* Testimonial */
+
+.testimonial{
+  color: black;
+  padding: 40px;
+}
+
+/* Wrap the image inside a cirle shape and set height to take up all of parent element */
+
+.testimonial img{
+  height: 100%;
+  clip-path: circle();
+}
+
+/* Align text centrally */
+
+.testimonial h3{
+  text-align: center;
+}
+
+/* Create a grid of three equal columns. Set a gap of 40 px between them */
+
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* Create a white card with some shadow around it */
+
+.card{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+              7px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
+}
